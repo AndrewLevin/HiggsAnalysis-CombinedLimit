@@ -27,6 +27,9 @@
 #include "../interface/HZZ4L_RooSpinZeroPdf_phase.h"
 #include "../interface/HZZ4L_RooSpinZeroPdf_2D.h"
 
+#include "../interface/RooOneParameterModelScaling.h"
+#include "../interface/RooTwoParameterModelScaling.h"
+
 #ifdef __CINT__
 #pragma link off all globals;
 #pragma link off all classes;
@@ -135,4 +138,8 @@
 #pragma link C++ class RooStats::HistFactory::RooBSpline+;
 #pragma link C++ class RooParamKeysPdf+;
 #pragma link C++ class RooStarMomentMorph+;
+
+#pragma link C++ class RooTwoParameterModelScaling+;
+#pragma link C++ class RooOneParameterModelScaling+;
+
 #endif 
