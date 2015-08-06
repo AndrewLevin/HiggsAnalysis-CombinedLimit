@@ -27,6 +27,7 @@
 #include "../interface/HZZ4L_RooSpinZeroPdf_phase.h"
 #include "../interface/HZZ4L_RooSpinZeroPdf_2D.h"
 
+#include "../interface/RooGeorgiMachacekModelScaling.h"
 #include "../interface/RooOneParameterModelScaling.h"
 #include "../interface/RooTwoParameterModelScaling.h"
 
@@ -139,6 +140,7 @@
 #pragma link C++ class RooParamKeysPdf+;
 #pragma link C++ class RooStarMomentMorph+;
 
+#pragma link C++ class RooGeorgiMachacekModelScaling+;
 #pragma link C++ class RooTwoParameterModelScaling+;
 #pragma link C++ class RooOneParameterModelScaling+;
 
