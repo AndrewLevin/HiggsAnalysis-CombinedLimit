@@ -44,7 +44,7 @@ RooOneParameterModelScaling::RooOneParameterModelScaling(const char *name,
 void RooOneParameterModelScaling::read_histograms() const
 {
 
-  string old_dir=gDirectory->GetPath();
+  std::string old_dir=gDirectory->GetPath();
 
   TFile * f = new TFile(th2d_filename);
 
