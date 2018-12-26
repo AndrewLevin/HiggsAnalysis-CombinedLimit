@@ -197,6 +197,7 @@
 	<class name="RooParametricHist" />
 	<class name="RooParametricShapeBinPdf" />
 	<class name="RooMorphingPdf" />
+	<class name="RooOneParameterModelScaling" />
         <function name="function th1fmorph" />
   <class name="CMSHistFunc" />
   <class name="CMSHistErrorPropagator" />

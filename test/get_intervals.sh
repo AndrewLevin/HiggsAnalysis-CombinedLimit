@@ -1,0 +1,5 @@
+python2.6 draw_1d_limit_plot.py /eos/user/a/amlevin/www/tmp/deltaNLL.cwww.expected.png "F_{S0} / #Lambda^{4} (TeV^{-4})"  "expected 95% confidence limit" higgsCombineTest.MultiDimFit.mH120.expected.cwww.root "expected 2#DeltaNLL"
+python2.6 draw_1d_limit_plot.py /eos/user/a/amlevin/www/tmp/deltaNLL.cw.expected.png "F_{S0} / #Lambda^{4} (TeV^{-4})"  "expected 95% confidence limit" higgsCombineTest.MultiDimFit.mH120.expected.cw.root "expected 2#DeltaNLL"
+python2.6 draw_1d_limit_plot.py /eos/user/a/amlevin/www/tmp/deltaNLL.cb.expected.png "F_{S0} / #Lambda^{4} (TeV^{-4})"  "expected 95% confidence limit" higgsCombineTest.MultiDimFit.mH120.expected.cb.root "expected 2#DeltaNLL"
+python2.6 draw_1d_limit_plot.py /eos/user/a/amlevin/www/tmp/deltaNLL.cpwww.expected.png "F_{S0} / #Lambda^{4} (TeV^{-4})"  "expected 95% confidence limit" higgsCombineTest.MultiDimFit.mH120.expected.cpwww.root "expected 2#DeltaNLL"
+python2.6 draw_1d_limit_plot.py /eos/user/a/amlevin/www/tmp/deltaNLL.cpw.expected.png "F_{S0} / #Lambda^{4} (TeV^{-4})"  "expected 95% confidence limit" higgsCombineTest.MultiDimFit.mH120.expected.cpw.root "expected 2#DeltaNLL"
