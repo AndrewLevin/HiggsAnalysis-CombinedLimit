@@ -21,7 +21,8 @@ operator=`echo $operator_and_range | awk -F, '{print $1}'`
 lower=`echo $operator_and_range | awk -F, '{print $2}'`
 upper=`echo $operator_and_range | awk -F, '{print $3}'`
 
-combineCards.py /afs/cern.ch/user/a/amlevin/wg/2016/photon_pt_bin5.txt /afs/cern.ch/user/a/amlevin/wg/2016/photon_pt_bin5.txt /afs/cern.ch/user/a/amlevin/wg/2016/photon_pt_bin5.txt /afs/cern.ch/user/a/amlevin/wg/2016/photon_pt_bin5.txt /afs/cern.ch/user/a/amlevin/wg/2016/photon_pt_bin5.txt >& wg_datacard_${operator}.txt
+combineCards.py /afs/cern.ch/user/a/amlevin/wg/2016/photon_pt_bin1.txt /afs/cern.ch/user/a/amlevin/wg/2016/photon_pt_bin2.txt /afs/cern.ch/user/a/amlevin/wg/2016/photon_pt_bin3.txt /afs/cern.ch/user/a/amlevin/wg/2016/photon_pt_bin4.txt /afs/cern.ch/user/a/amlevin/wg/2016/photon_pt_bin5.txt >& wg_datacard_${operator}.txt
+#combineCards.py /afs/cern.ch/user/a/amlevin/wg/2016/photon_pt_bin5.txt /afs/cern.ch/user/a/amlevin/wg/2016/photon_pt_bin5.txt /afs/cern.ch/user/a/amlevin/wg/2016/photon_pt_bin5.txt /afs/cern.ch/user/a/amlevin/wg/2016/photon_pt_bin5.txt /afs/cern.ch/user/a/amlevin/wg/2016/photon_pt_bin5.txt >& wg_datacard_${operator}.txt
 #combineCards.py /afs/cern.ch/user/a/amlevin/wg/2016/photon_pt_bin5.txt >& wg_datacard_${operator}.txt
 #combineCards.py /afs/cern.ch/user/a/amlevin/wg/2016/photon_pt_bin4.txt >& wg_datacard_${operator}.txt
 python2.6 refine_grid_1d.py /afs/cern.ch/user/a/amlevin/wg/2016/${operator}_scaling.root wg_${operator}_scaling_refined.root
