@@ -51,8 +51,8 @@ RooParametricShapeBinPdf::RooParametricShapeBinPdf(const char *name, const char 
     myintegrals.add(*myintegral);
   }
   //last one is full integral (no range)
-  myintegral = getPdf()->createIntegral(obs);
-  myintegrals.add(*myintegral);
+  //  myintegral = getPdf()->createIntegral(obs);
+  //  myintegrals.add(*myintegral);
 }
 //---------------------------------------------------------------------------
 RooParametricShapeBinPdf::RooParametricShapeBinPdf(const RooParametricShapeBinPdf& other, const char* name) : RooAbsPdf(other, name), 
@@ -153,7 +153,8 @@ Double_t RooParametricShapeBinPdf::analyticalIntegral(Int_t code, const char* ra
   obs.add(x.arg());
   
   if (code==1 && xRangeMin<=xMin && xRangeMax>=xMax){
-    integral = getIntegral(xBins)->getVal();
+      //    integral = getIntegral(xBins)->getVal();
+      integral = getPdf()->createIntegral(obs)->getVal();
     return integral;
   }
   else if(code==1) {     
